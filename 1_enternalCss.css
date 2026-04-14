@@ -1,0 +1,15 @@
+#para{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#para2{
+    color: blue;
+}
+#text{
+    text-decoration: underline;
+    background-color: yellow ;
+}
+body{
+    background-color: lightpink;
+}

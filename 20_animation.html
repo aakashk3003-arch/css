@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Traffic Light</title>
+
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ddd;
+}
+
+.panel {
+    width: 100px;
+    height: 260px;
+    background: #0d1b2a;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.light {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #222;
+}
+
+/* Animation (only once) */
+.red {
+    animation: redLight 6s forwards;
+}
+
+.yellow {
+    animation: yellowLight 6s forwards;
+}
+
+.green {
+    animation: greenLight 6s forwards;
+}
+
+@keyframes redLight {
+    0% { background: red; }
+    33% { background: red; }
+    34% { background: #222; }
+    100% { background: #222; }
+}
+
+@keyframes yellowLight {
+    0%, 33% { background: #222; }
+    34% { background: yellow; }
+    66% { background: yellow; }
+    67% { background: #222; }
+}
+
+@keyframes greenLight {
+    0%, 66% { background: #222; }
+    67% { background: limegreen; }
+    100% { background: limegreen; }
+}
+</style>
+
+</head>
+<body>
+
+<div class="panel">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+</div>
+
+</body>
+</html>

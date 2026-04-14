@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 350px;
+    width: 100px;
+    background-color: wheat;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.5rem;
+}

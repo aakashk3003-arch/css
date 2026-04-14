@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 250px;
+            background-color: lightcoral;
+            text-align: center;
+            /* transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out; */
+            transition:height 1s ease;
+        }
+        .box:hover{
+            height: 150px;
+            width: 260px;
+            background-color: lightseagreen;
+        }
+        button{
+            padding: 10px 20px;
+            border: 2px solid darkblue;
+            color: blue;
+            background-image: linear-gradient(lightskyblue,dodgerblue);
+            border-radius: 10px;
+            font-weight: bold;
+            transition: all 1s ease;
+        }
+        button:hover{
+              padding: 15px 25px;
+             background-image: linear-gradient(lightskyblue,dodgerblue);
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Introduction to Transition</div>
+    <hr/>
+    <button>Click Button</button>
+</body>
+</html>
+<!-- Transition allow smooth change from one state to another(useually normal -> hover)
+  works.with only hover
+  transition properties like
+  transtion-duration,delay, timing-function...
+  in element
+
+  what to change 
+  :hover
+  -->

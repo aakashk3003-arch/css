@@ -1,0 +1,31 @@
+.mydiv{
+    height: 100px;
+    width: 50%;
+    background-color: lightseagreen;
+    /* border-style:solid ; */
+    /* border-top-style:solid ;
+    border-left-style:dashed;
+    border-right-style:dotted;
+    border-bottom-style: double; */
+
+    /* clock-wise .. start form top, top right bootom left */
+    /* border-style: solid dashed dotted dotted; */
+    border-style: solid double;
+    border-color: yellow  red gren  blue;
+    border-width: 5px;
+    border-radius: 50px;
+
+}
+.circl{
+    height:200px;
+    width:200px;
+    background-color: coral;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+
+/* if you want to circle any element -> Height and width must be equql : border-radius: 50% */
+
+button {
+    border:none;
+}

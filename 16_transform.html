@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 200px;
+            width: 200px;
+            margin: 100px;
+            border: 3px solid;
+        }
+        .transformCont{
+              height: 200px;
+            width: 200px;
+            background-color: lightseagreen; 
+            opacity: 0.9;
+            /* transform: perspective(200px) translate3d(0px , 0px, 60px); */
+            transform:rotate(50deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="transformCont"></div>
+    </div>
+</body>
+</html>
+<!-- 
+Transform: Transform ia a css property that allows you to to visually change an element's 
+shape,size,position or orientation without  affecting the document layout
+It works on the visual layer, not the layout flow
+
+What can transform do?
+using transform,you can
+Move elements
+Roteste elements 
+scale elenment(zoom in,zoom out)
+skew elements
+create 3d effectes
+
+What is presective in css transform?
+prespective define how far the viewer is form the object in a 3D space..
+It controls the depth effect when you 3D transforms link rotatex,rotatey,translatez...
+
+Why prespective need?
+without prespective: 3D rotation look flat(2D-like)
+with prespective:
+3D rotation look realistic,near side look bigger, Fare side looks smaller
+
+transform:
+translate - 2D,3D(x,y,z)
+rotate - 2D,3D
+Scale -default value is 1.. zoom-in ->..zoom-out ->0.8
+sckew - X,Y
+-->

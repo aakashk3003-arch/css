@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: lightseagreen;
+            font-size: 1.2rem;
+            text-align: center;
+            font-weight:bold;
+            border-radius: 10px;
+            display: inline-block;
+            margin: 20px;
+            transition: transform 2s ease;
+        }
+        .translatex:hover {
+            transform: translatex(50px);
+        }
+        .translatey:hover {
+            transform: translatey(50px);
+        }
+        .translatez:hover {
+            transform: perspective(300px) translatez(50px);
+        }
+         .translatexy:hover {
+            transform:  translate(45px, 50px);
+        }
+        .rotate:hover{
+            transform: rotate(1800deg);
+            transform-origin:top right ;
+        }
+        .rotatex:hover{
+            transform: perspective(300px) rotatex(30deg);
+        }
+          .rotatey:hover{
+            transform: perspective(300px) rotatey(60deg);
+        }
+        .rotatez3d:hover{
+            transform: perspective(300px) rotate3d(1, 0, 0, 50deg);
+        }
+        .rotatez:hover{
+            transform: rotatez(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box translatex">translatex</div>
+    <div class="box translatey">translatey</div>
+    <div class="box translatez">translatez</div>
+    <div class="box translatexy">translatexy</div>
+    <div class="box rotate">rotate</div>
+    <div class="box rotatex">rotatex</div>
+    <div class="box rotatey">rotatey</div>
+    <div class="box rotatez3d">rotatez3d</div>
+    <div class="box rotatez">rotatez</div>
+
+    </div>
+</body>
+</html>
+
+
+<!-- 
+block-level-element -> inline element
+display: inline-block
+
+inline element -> block level element
+display:block
+-->
